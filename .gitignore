@@ -1,5 +1,6 @@
 # Last modified by Alex Smith, 2014-03-11
 build/*
+*.d
 *.swp
 *.kate-swp
 *~
@@ -12,6 +13,7 @@ Makefile
 cscope.*
 cmake_install.cmake
 install_manifest.txt
+output-4305-dirtybuild.txt
 tags
 TAGS
 libnethack/util/savemap.txt
