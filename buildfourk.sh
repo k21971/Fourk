@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cd ~/nhfourk
+cd ~/Fourk
 mkdir -p build
 cd build
 
