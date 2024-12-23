@@ -50,8 +50,12 @@ livelog_write_string(const char *buffer) {
     if (program_state.followmode != FM_PLAY)
         return;
 
+    /* don't output livelog if playing in wiz/explore mode */
+    if (wizard || discover)
+        return;
+
     FILE* livelogfile;
-    
+
     int fd = open_datafile(LIVELOG,
                            O_CREAT | O_APPEND | O_WRONLY,
                            SCOREPREFIX);
